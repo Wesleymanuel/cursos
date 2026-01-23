@@ -1,0 +1,29 @@
+.box-main{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    color: #1c73be;
+    border: #1c73be 3px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9px;
+    font-size: 1em;
+}
+.icone-box{
+    font-size: 2em;
+}
+
+.box-main > p {
+    margin: 0 12px;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .box-main{
+        width: 120px;
+        height: 120px;
+    }
+}
