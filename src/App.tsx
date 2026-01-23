@@ -1,11 +1,11 @@
 import './App.css'
-import Header from './components/Header'
+import LangingPage from './components/LangingPage'
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <LangingPage/>
     </>
   )
 }
