@@ -1,5 +1,6 @@
 .first-main{
-    min-height: 100dvh; 
+    height: 100dvh; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1024px;
+    max-width: 1000px;
     width: 900px;
 }
 
@@ -64,9 +65,18 @@
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 742px) {
     .text-content{
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .logo2{
+        font-size: 200px;
+    }
+}
+
+@media (max-width: 526px) {
+    .text-content{
+        font-size: 12px;
     }
     .logo2{
         font-size: 100px;
