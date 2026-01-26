@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, black , rgb(27, 26, 26));
+    background-image: linear-gradient(to bottom, #000000 , rgb(12, 12, 12));
     width: 100%;
 }
 html{

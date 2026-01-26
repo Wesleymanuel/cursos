@@ -1,0 +1,37 @@
+.boxs-root{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards-root{
+    width: calc(100vw - ((100vw - 90%) / 2));
+    margin-left: auto;
+    margin-top: 100px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 15px 6px;
+    display: flex;
+}
+
+.comments-root{
+    width: calc(100vw - ((100vw - 90%) / 2));
+    overflow-y: visible;
+    overflow-x: auto;
+    display: flex;
+    margin-left: auto;
+    padding: 100px 6px;
+    gap: 10px;
+}
+
+@media (max-width: 395px){
+    .boxs-root{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+}

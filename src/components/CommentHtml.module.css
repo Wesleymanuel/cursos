@@ -1,0 +1,22 @@
+.comment {
+  padding: var(--mantine-spacing-lg) var(--mantine-spacing-xl);
+  max-width: 900px;
+  width: 400px;
+  height: 200px;
+  flex-shrink: 0;
+  background-color: #000000;
+  color: aliceblue;
+  border-color: #000000;
+}
+
+
+.body {
+  padding-top: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+}
+
+.content {
+  & > p:last-child {
+    margin-bottom: 0;
+  }
+}

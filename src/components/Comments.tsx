@@ -1,7 +1,12 @@
 import { Avatar, Group, Paper, Text, TypographyStylesProvider } from '@mantine/core';
 import classes from './CommentHtml.module.css';
 
-export function CommentHtml() {
+interface commentAtributesProps{
+  name : string
+  text : string
+}
+
+export function CommentHtml({name,text} : commentAtributesProps) {
   return (
     <Paper withBorder radius="md" className={classes.comment}>
       <Group>
@@ -11,7 +16,7 @@ export function CommentHtml() {
           radius="xl"
         />
         <div>
-          <Text fz="sm">Jacob Warnhalter</Text>
+          <Text fz="sm">{name}</Text>
           <Text fz="xs" c="dimmed">
             10 minutes ago
           </Text>
@@ -22,7 +27,7 @@ export function CommentHtml() {
           className={classes.content}
           dangerouslySetInnerHTML={{
             __html:
-              '<p>I use <a href="https://heroku.com/" rel="noopener noreferrer" target="_blank">Heroku</a> to host my Node.js application, but MongoDB add-on appears to be too <strong>expensive</strong>. I consider switching to <a href="https://www.digitalocean.com/" rel="noopener noreferrer" target="_blank">Digital Ocean</a> VPS to save some cash.</p>',
+              `<p>${text}</p>`,
           }}
         />
       </TypographyStylesProvider>
