@@ -5,7 +5,7 @@ const IndividualProduct = ({img,description,title,price}) => {
 
   return (
     <main>
-      
+      <h1>ola</h1>
     </main>
   )
 }

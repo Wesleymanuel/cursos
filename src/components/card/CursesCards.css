@@ -1,6 +1,6 @@
 .cards-main{
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
     width: 250px;
     height: 200px;
     border-radius: 10px;
@@ -35,4 +35,13 @@
 .especificoes{
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 800px){
+    .cards-main{
+        min-width: 300px;
+        min-height: 300px;
+        width: 270px;
+        height: 270px;
+    }
 }

@@ -5,7 +5,7 @@ const imagem = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpg8Sl78R9
 const CursesCardRoot = () => {
   return (
     <main className='cards-main'>
-        <div className='img-container' style={{ backgroundImage: `url(${imagem})`}}>
+        <div className='img-container' style={{ backgroundImage: `url(${imagem})`, height: '50%'}}>
         </div>
         <div className='titulo'>
             <p>titulo</p>
