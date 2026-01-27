@@ -6,8 +6,12 @@ import CursesCardRoot from '../components/card/CursesCardRoot';
 import Box  from '../components/Box'
 import './Home.css'
 import { CommentHtml } from "../components/Comments";
+import { useFetchCourses } from "../hooks/useFetchCourses";
 
 const Home = () => {
+
+  const { data, isError, isLoading } = useFetchCourses();
+
   return (
     <>
       <LangingPage/>
@@ -16,15 +20,17 @@ const Home = () => {
         <Box icon={GrCertificate} text='international certifications'/>
         <Box icon={FaRobot} text='innovations with AI'/>
       </section>
+      {/* 
       <section className='cards-root'>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
-        <CursesCardRoot/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
+        <CursesCardRoot name={data.title} description={data.description} price={data.price} img={data.img}/>
       </section>
+      */}
       <section className='cards-root'>
         <CursesCardRoot/>
         <CursesCardRoot/>
