@@ -1,0 +1,25 @@
+.button-side{
+    background-color: transparent;
+    color: #1c73be ;
+}
+.incon-but-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.icons-properts{
+    font-size: x-large;
+}
+
+.button-side:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.incon-but-container:hover{
+    background-color: #1c73be;
+    color: black;
+}
