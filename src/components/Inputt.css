@@ -1,0 +1,19 @@
+.input-form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.input-form-container > input {
+    height: 40px;
+    border-radius: 4px;
+    border-style: none;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid var(--base-color);
+    color: white;
+}
+
+.input-form-container > input:focus{
+    color: rgb(99, 98, 98);
+}

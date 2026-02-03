@@ -1,0 +1,52 @@
+.descriptionBox-container{
+    border: 1px solid var(--base-color);
+    padding-left: 8px;
+    position: relative;
+}
+.description-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+    position: relative;
+    gap: 8px;
+}
+
+
+.scalle{
+    position: relative;
+}
+
+.description-box.scalle::after{
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 97%;
+    height: 2px;
+    z-index: 10;
+    background-color: var(--base-color);
+    bottom: calc(-8px);
+}
+
+.active{
+    transform: rotate(180deg);
+    transition: all 1s ease-in-out;
+}
+
+.lorem {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.3s ease;
+}
+
+.lorem.open {
+  max-height: 1000px; /* valor maior que o conteúdo */
+  opacity: 1;
+  padding: 10px;
+}
+
+.lorem.close{
+    max-height: 0px;
+    opacity: 0;
+}

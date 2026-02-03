@@ -1,0 +1,30 @@
+.modal-main {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-main.modal-open {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1);
+}
+
+.form-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
